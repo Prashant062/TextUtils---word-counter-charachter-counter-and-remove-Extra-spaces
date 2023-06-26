@@ -1,0 +1,109 @@
+import React from "react";
+
+export default function About(props) {
+  return (
+    <div className="container" style={{
+      backgroundColor: props.mode === 'dark' ? '#042743' : 'white'
+      , color: props.mode === 'dark' ? 'white' : 'black'
+    }}>
+      <h1 className="my-3">About Us</h1>
+      <div className="accordion" style={{
+        backgroundColor: props.mode === 'dark' ? '#042743' : 'white'
+        , color: props.mode === 'dark' ? 'white' : 'black'
+      }} id="accordionExample">
+        <div className="accordion-item">
+          <h2 className="accordion-header">
+            <button
+              className="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+              style={{
+                backgroundColor: props.mode === 'dark' ? '#042743' : 'white'
+                , color: props.mode === 'dark' ? 'white' : 'black'
+              }}
+            >
+              <strong>Analyze your text</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            className="accordion-collapse collapse show"
+            data-bs-parent="#accordionExample"
+          >
+            <div className="accordion-body" style={{
+              backgroundColor: props.mode === 'dark' ? '#042743' : 'white'
+              , color: props.mode === 'dark' ? 'white' : 'black'
+            }}>
+              TextUtils give you a way to analyze your text quickly and efficiently.Be it word count, character count or
+            </div>
+          </div>
+        </div>
+        <div className="accordion-item">
+          <h2 className="accordion-header">
+            <button
+              className="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+              style={{
+                backgroundColor: props.mode === 'dark' ? '#042743' : 'white'
+                , color: props.mode === 'dark' ? 'white' : 'black'
+              }}
+            >
+              <strong>Free to use</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            className="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div className="accordion-body" style={{
+              backgroundColor: props.mode === 'dark' ? '#042743' : 'white'
+              , color: props.mode === 'dark' ? 'white' : 'black'
+            }}>
+              Textutils is a free character tool that provides instant character count & word count statistics for a given
+              text. TextUtils reports the numberof words and characters.Thus it is suitable for writing text with words/character limit.
+            </div>
+          </div>
+        </div>
+        <div className="accordion-item">
+          <h2 className="accordion-header">
+            <button
+              className="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+              style={{
+                backgroundColor: props.mode === 'dark' ? '#042743' : 'white'
+                , color: props.mode === 'dark' ? 'white' : 'black'
+              }}
+            >
+              <strong>Browser Compatible</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            className="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div className="accordion-body" style={{
+              backgroundColor: props.mode === 'dark' ? '#042743' : 'white'
+              , color: props.mode === 'dark' ? 'white' : 'black'
+            }}>
+              This word counter software works in any web browser such as Chrome ,Firefox,Internet Explorer,Safari,Opera.
+              It suit to count characteri in facebok, blog, books, excel document, pdf document,essays etc.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
